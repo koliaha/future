@@ -193,6 +193,10 @@ body {
   z-index: 10;
 }
 
+.trendy .wrapper {
+  position: relative;
+}
+
 .trendy .trend-content {
   width: 100%;
   -webkit-box-shadow: -1px 5px 48px 3px rgba(237, 235, 253, 0.75);
@@ -202,16 +206,32 @@ body {
   text-align: center;
 }
 
+.trendy .trend-content.second {
+  background: url("../img/bg-second.png") no-repeat center;
+}
+
 .trendy .trend-content .trend-title {
   color: #333333;
   font-family: "OpenSans";
   font-size: 50px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1000;
+}
+
+.trendy .trend-content .trend-title::after {
+  position: absolute;
+  content: url("../img/slash.png");
+  top: -40px;
+  z-index: 1;
+  opacity: 0.5;
+  right: 30%;
 }
 
 .trendy .trend-content .tabs {
   margin-top: 100px;
+  position: relative;
 }
 
 .trendy .trend-content .tabs .tabs-list {
@@ -361,6 +381,36 @@ body {
 
 .trendy .trend-content .trend-list .trend-item:hover .btn {
   opacity: 1;
+}
+
+.cube {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+}
+
+.triangle {
+  position: absolute;
+  left: -50px;
+  bottom: 30%;
+}
+
+.triangle1 {
+  position: absolute;
+  left: 17%;
+  top: 8%;
+}
+
+.circle2 {
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+  width: 70px;
+  height: 70px;
+}
+
+.circle2 img {
+  width: 100%;
 }
 
 .tabs__content {

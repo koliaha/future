@@ -14,14 +14,18 @@
     .subscribe .sub-content .order_form {
         width: 85%;
     }
+    .trendy .trend-content .trend-list .trend-item .item-img img{
+        width: 100%;
+    }
+    .cube{
+        display: none;
+    }
 }
 @media (max-width:815px){
 .trendy .trend-content .trend-list{
     margin-top: 40px;
 }
-.trendy .trend-content .trend-list .trend-item .item-img img{
-    width: 100%;
-}
+
 
 }
 @media (max-width:768px){
