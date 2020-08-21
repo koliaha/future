@@ -15,6 +15,15 @@
         width: 85%;
     }
 }
+@media (max-width:815px){
+.trendy .trend-content .trend-list{
+    margin-top: 40px;
+}
+.trendy .trend-content .trend-list .trend-item .item-img img{
+    width: 100%;
+}
+
+}
 @media (max-width:768px){
     .trendy .trend-content .trend-list .trend-item {
         width: 40%;
@@ -44,7 +53,9 @@
         position: absolute;
         left: 0;
     }
-    
+    .trendy .trend-content .trend-list .trend-item .item-img img{
+        width: auto;
+    }
     .trendy .trend-content .trend-list .trend-item {
         width: 100%;
     }
